@@ -2,11 +2,13 @@
 
 React + TypeScript example demonstrating lazy loading and code splitting using React.lazy and Suspense.
 
+# Solution
+
 This project demonstrates how to implement lazy loading and code splitting in a React application using TypeScript. It uses `React.lazy` and `Suspense` to dynamically load components and routes, improving the application's performance by reducing the initial bundle size.
 
 ## Feature 1 (Lazy Loading Pages)
 
-- **Lazy Loading pages**: Pages/Routes like `Profile` are loaded only when needed, reducing the initial load time. Routes are split into separate chunks, ensuring that only the required code is loaded for each route.
+- **Lazy Loading pages**: Pages/Routes like `Profile` and `About` are loaded only when needed, reducing the initial load time. Routes are split into separate chunks, ensuring that only the required code is loaded for each route.
 - We have not lazy loaded the home page as it is visible in the first fold and it might affect FCP in that case
 - **React Router Integration**: The project uses `react-router-dom` for navigation between pages.
 - **Custom Loading Delay**: Demonstrates adding a delay before loading components using a custom `wait` function.
@@ -23,3 +25,25 @@ This project demonstrates how to implement lazy loading and code splitting in a 
 - A valid use case for this is same as what we have used. lets say there are 5 different tabs which show 5 different huge components. it doesn't make sense to load all those 5 components at once. hence we will load them using lazy loading
 
 ![Result 1](./src/assets/about.gif)
+
+## To Run
+
+First clone the repo, then
+
+```bash
+npm install
+```
+
+to run dev server
+
+```bash
+npm run dev
+```
+
+to generate build and serve
+
+```bash
+npm run build
+
+npm run preview
+```
