@@ -1,0 +1,14 @@
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* header ul li {
+  margin-left: ;
+} */
